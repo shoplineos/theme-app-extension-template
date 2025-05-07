@@ -1,0 +1,12 @@
+<p>
+  To learn more about Conditional App Blocks, Please visit our development documentation: <a rel="nofollow" href="https://developer.myshopline.com/docs/introduce/3NFsiQzO#conditional-app-blocks">theme app extension -> framework</a>
+</p>
+
+{{#schema}}
+{
+  "name": "Conditional App Block",
+  "target": "section",
+  "available_if": "{{ apps.metafields.sample_app.feature1.value }}",
+  "settings": []
+}  
+{{/schema}}
