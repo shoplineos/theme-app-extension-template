@@ -7,11 +7,11 @@ function main() {
   });
 
   function initAppBlockInstance($el, blockId) {
-    const $button = $el.querySelector('.app-embed-block__button');
+    const $button = $el.querySelector('.app-embed-block__button-wrapper');
 
     if ($button) {
       $button.addEventListener('click', () => {
-        $button.style.color = 'red';
+        $button.querySelector('.app-embed-block__button').style.color = 'red';
         console.log('Clicked Me! blockId is ', blockId);
       });
     }
